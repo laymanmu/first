@@ -16,12 +16,11 @@ public class Application {
 	}
 
 
+
 	@Bean
 	public CommandLineRunner startup(ApplicationContext ctx) {
 		return args -> {
-			System.out.println("before");
-			inspectBeans(ctx);
-			System.out.println("after");
+			System.out.println("in custom startup");
 		};
 	}
 
