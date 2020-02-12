@@ -2,3 +2,7 @@ redis:
   host: localhost
   port: 6379
   password:
+kafka:
+  bootstrapAddress: localhost:9092
+  topic: topic1
+  consumerGroup: consumerGroup1
